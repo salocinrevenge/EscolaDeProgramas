@@ -3,9 +3,7 @@ package escolaDeProgramas;
 import javax.swing.Timer;
 
 public class Escola implements Tickavel{
-// essa classe deve conter a escola e todos os seus alunos, alem de seu funcionamento
 	private Window janela;
-	//possuir a funcao tick e a funcao render
 	private Timer t;
 	public Escola()
 	{
@@ -13,10 +11,6 @@ public class Escola implements Tickavel{
 				
 		this.t = new Timer(10, new Tick(this));
 		this.t.start();
-		while(true)
-		{
-			
-		}
 		
 	}
 	
